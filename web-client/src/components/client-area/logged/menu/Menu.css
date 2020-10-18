@@ -1,0 +1,126 @@
+.menu-container
+{
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+.menu 
+{
+    width: 250px;
+    height: 100%;
+    background-color: rgb(51, 53, 63);
+    position: relative;
+    text-align: center;
+    color: white;
+    box-shadow: 5px 0px 15px -7px rgba(0,0,0,0.75);
+}
+
+.menu .menu-d 
+{
+    position: absolute;
+    bottom: 0;
+}
+
+.menu .menu-m
+{
+    margin-top: 50px;
+}
+
+.menu .menu-m button 
+{
+    width: 95%;
+    text-align: left;
+    margin: 5px auto;
+    height: 50px;
+    font-size: 1em;
+    border: none;
+    background-color: rgba(22, 22, 22, 0.267);
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.1s ease;
+}
+
+.menu .menu-m button:hover
+{
+    background-color: rgba(160, 160, 160, 0.521);
+}
+
+.menu .menu-d button 
+{
+    width: 250px;
+    text-align: left;
+    height: 50px;
+    font-size: 1em;
+    border: none;
+    background-color: rgba(190, 10, 10, 0.719);
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.1s ease;
+}
+
+.menu .menu-d button:hover
+{
+    background-color: rgb(202, 0, 0);
+}
+
+.m-has-bg 
+{
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+@media only screen and (max-width: 900px)
+{
+    .menu-container
+    {
+        width: 100vw;
+    }
+
+    .menu-header 
+    {
+        width: 100vw;
+        height: 50px;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.185);
+    }
+
+    .menu-header .menu-burger 
+    {
+        font-size: 1.5em;
+        height: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .menu-header .menu-burger:active
+    {
+        background-color: rgba(76, 142, 180, 0.767);
+        color: white;
+    } 
+
+    .menu 
+    {
+        animation: menu-show 0.2s;
+        animation-fill-mode: forwards; 
+    }
+
+    @keyframes menu-show 
+    {
+        from 
+        {
+            left: -100vw;
+        }
+        to 
+        {
+            left: 0;
+        }
+    }
+}

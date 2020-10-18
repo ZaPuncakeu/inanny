@@ -1,0 +1,24 @@
+{
+  "name": "inanny-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "base64-to-image": "^1.0.2",
+    "crypto-js": "^4.0.0",
+    "express": "^4.17.1",
+    "firebase": "^7.16.1",
+    "firebase-admin": "^9.0.0",
+    "generate-password": "^1.5.1",
+    "nodemailer": "^6.4.11",
+    "password-hash": "^1.2.2",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Anis",
+  "license": "ISC"
+}
