@@ -31,7 +31,7 @@ const { info } = require("console");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
-});
+}); 
 
 /*app.get("/",(req,res) => 
 {
